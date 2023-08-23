@@ -1,5 +1,5 @@
 import speech_recognition as sr
-
+import pyttsx3
 def Listen():
     r = sr.Recognizer()
     with sr.Microphone() as source:
@@ -13,9 +13,7 @@ def Listen():
         print(f"you said: {query}\n")
 
     except Exception as e:
-
         print("please say again...")
-        return "none"
-    return query
-
-Listen()
+        return e
+    query=str(query)
+    return query.lower()
