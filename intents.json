@@ -373,13 +373,6 @@
       "responses": [
         "Proofreading is important. Use the 'Review' tab and click on 'Spelling & Grammar' to run a spell check on your document."
       ]
-    },
-    {
-      "tag": "ms_word",
-      "patterns": ["spell check", "check spelling"],
-      "responses": [
-        "My new changes is important. Use the 'Review' tab and click on 'Spelling & Grammar' to run a spell check on your document."
-      ]
     }
   ]
 }
