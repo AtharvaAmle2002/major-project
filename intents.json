@@ -296,14 +296,6 @@
       "responses": ["Creating a new event."]
     },
     {
-      "tag": "ms_word_operate",
-      "patterns": ["operate MS Word", "use Microsoft Word", "MS Word help"],
-      "responses": [
-        "Certainly! I can assist you with using Microsoft Word. What specific task do you need help with?",
-        "Working with MS Word? I'm here to guide you. Please let me know what you'd like to do."
-      ]
-    },
-    {
       "tag": "ms_word_create",
       "patterns": ["create new document", "start a new file in Word"],
       "responses": [
