@@ -125,28 +125,6 @@
       ]
     },
     {
-      "tag": "greeting",
-      "patterns": ["hi", "hello", "hey"],
-      "responses": ["Hello!", "Hi there!", "Hey! How can I assist you today?"]
-    },
-    {
-      "tag": "greeting",
-      "patterns": ["how are you", "how's it going"],
-      "responses": [
-        "I'm here to help. What can I do for you?",
-        "I'm here and ready to assist."
-      ]
-    },
-    {
-      "tag": "greeting",
-      "patterns": ["good morning", "good afternoon", "good evening"],
-      "responses": [
-        "Good morning!",
-        "Good afternoon! How can I help you?",
-        "Good evening! How can I assist?"
-      ]
-    },
-    {
       "tag": "help",
       "patterns": ["help", "assist", "support"],
       "responses": [
@@ -187,7 +165,7 @@
       ]
     },
     {
-      "tag": "ms_word",
+      "tag": "ms_word_operate",
       "patterns": ["operate MS Word", "use Microsoft Word", "MS Word help"],
       "responses": [
         "Certainly! I can assist you with using Microsoft Word. What specific task do you need help with?",
@@ -195,7 +173,7 @@
       ]
     },
     {
-      "tag": "navigation",
+      "tag": "navigation_open",
       "patterns": ["open [application name]", "launch [application name]"],
       "responses": [
         "Opening the requested application.",
@@ -203,122 +181,122 @@
       ]
     },
     {
-      "tag": "navigation",
+      "tag": "navigation_closeapps",
       "patterns": ["close [application name]"],
       "responses": ["Closing [application name]."]
     },
     {
-      "tag": "navigation",
+      "tag": "navigation_switch",
       "patterns": ["switch to [application name]"],
       "responses": ["Switching to [application name]."]
     },
     {
-      "tag": "navigation",
+      "tag": "navigation_minimize",
       "patterns": ["minimize [application name]"],
       "responses": ["Minimizing [application name]."]
     },
     {
-      "tag": "navigation",
+      "tag": "navigation_maximize",
       "patterns": ["maximize [application name]"],
       "responses": ["Maximizing [application name]."]
     },
     {
-      "tag": "navigation",
+      "tag": "navigation_url",
       "patterns": ["go to [website url]"],
       "responses": ["Navigating to [website url]."]
     },
     {
-      "tag": "navigation",
+      "tag": "navigation_scroll",
       "patterns": ["scroll up"],
       "responses": ["Scrolling up."]
     },
     {
-      "tag": "text_handling",
+      "tag": "text_handling_create",
       "patterns": ["create a new document"],
       "responses": ["Creating a new document."]
     },
     {
-      "tag": "text_handling",
+      "tag": "text_handling_openDoc",
       "patterns": ["open [document name]"],
       "responses": ["Opening [document name]."]
     },
     {
-      "tag": "text_handling",
+      "tag": "text_handling_save",
       "patterns": ["save"],
       "responses": ["Saving the document."]
     },
     {
-      "tag": "file_management",
+      "tag": "file_management_open",
       "patterns": ["open file explorer"],
       "responses": ["Opening File Explorer."]
     },
     {
-      "tag": "file_management",
+      "tag": "file_management_downloads",
       "patterns": ["show downloads"],
       "responses": ["Displaying your downloads."]
     },
     {
-      "tag": "file_management",
+      "tag": "file_management_create",
       "patterns": ["create a new folder"],
       "responses": ["Creating a new folder."]
     },
     {
-      "tag": "system_commands",
+      "tag": "system_commands_shutdown",
       "patterns": ["shutdown"],
       "responses": ["Shutting down the system."]
     },
     {
-      "tag": "system_commands",
+      "tag": "system_commands_restart",
       "patterns": ["restart"],
       "responses": ["Restarting the system."]
     },
     {
-      "tag": "communication",
+      "tag": "communication_email",
       "patterns": ["send email to [contact name]"],
       "responses": ["Composing an email to [contact name]."]
     },
     {
-      "tag": "communication",
+      "tag": "communication_read",
       "patterns": ["read emails"],
       "responses": ["Reading your emails."]
     },
     {
-      "tag": "assistive_features",
+      "tag": "assistive_features_ScreenRead",
       "patterns": ["enable screen reader"],
       "responses": ["Enabling the screen reader."]
     },
     {
-      "tag": "assistive_features",
+      "tag": "assistive_features_video",
       "patterns": ["turn on voice control"],
       "responses": ["Activating voice control."]
     },
     {
-      "tag": "web_browsing",
+      "tag": "web_browsing_search",
       "patterns": ["search for [query]"],
       "responses": ["Performing a search for [query]."]
     },
     {
-      "tag": "web_browsing",
+      "tag": "web_browsing_openLink",
       "patterns": ["open [website url]"],
       "responses": ["Opening [website url]."]
     },
     {
-      "tag": "calendar_reminders",
+      "tag": "calendar_reminders_check",
       "patterns": ["what's on my calendar"],
       "responses": ["Checking your calendar for upcoming events."]
     },
     {
-      "tag": "calendar_reminders",
+      "tag": "calendar_reminders_today",
       "patterns": ["what's on my calendar today"],
       "responses": ["Checking your calendar for today's events."]
     },
     {
-      "tag": "calendar_reminders",
+      "tag": "calendar_reminders_newevent",
       "patterns": ["create a new event"],
       "responses": ["Creating a new event."]
     },
     {
-      "tag": "ms_word",
+      "tag": "ms_word_operate",
       "patterns": ["operate MS Word", "use Microsoft Word", "MS Word help"],
       "responses": [
         "Certainly! I can assist you with using Microsoft Word. What specific task do you need help with?",
@@ -326,49 +304,49 @@
       ]
     },
     {
-      "tag": "ms_word",
+      "tag": "ms_word_create",
       "patterns": ["create new document", "start a new file in Word"],
       "responses": [
         "Creating a new document in Microsoft Word is easy! Just go to 'File' > 'New' and choose a blank document template."
       ]
     },
     {
-      "tag": "ms_word",
+      "tag": "ms_word_open",
       "patterns": ["open existing document", "load Word file"],
       "responses": [
         "To open an existing document in Microsoft Word, go to 'File' > 'Open' and select the file you want to work on."
       ]
     },
     {
-      "tag": "ms_word",
+      "tag": "ms_word_save",
       "patterns": ["save document", "save Word file"],
       "responses": [
         "Saving your document is important. Simply go to 'File' > 'Save' or 'File' > 'Save As' to choose a location and name for your file."
       ]
     },
     {
-      "tag": "ms_word",
+      "tag": "ms_word_txt",
       "patterns": ["format text", "change font style"],
       "responses": [
         "Formatting text in Word is a breeze. Highlight the text you want to format and use the formatting options in the 'Home' tab to change font style, size, color, and more."
       ]
     },
     {
-      "tag": "ms_word",
+      "tag": "ms_word_insert",
       "patterns": ["insert image", "add picture to document"],
       "responses": [
         "To insert an image in your Word document, go to the 'Insert' tab and choose 'Picture'. Select the image file you want to add."
       ]
     },
     {
-      "tag": "ms_word",
+      "tag": "ms_word_createtable",
       "patterns": ["create table", "make a table"],
       "responses": [
         "Creating a table in Word is useful for organizing data. Click on the 'Insert' tab, choose 'Table', and select the number of rows and columns you need."
       ]
     },
     {
-      "tag": "ms_word",
+      "tag": "ms_word_spell",
       "patterns": ["spell check", "check spelling"],
       "responses": [
         "Proofreading is important. Use the 'Review' tab and click on 'Spelling & Grammar' to run a spell check on your document."
