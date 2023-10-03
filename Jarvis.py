@@ -1,12 +1,16 @@
 import random
 import json
 import torch
+import os
+import sys
 from Brain import NeuralNet
 from NeuralNetwork import bag_of_words, tokenize
 from Task import NonInputExecution
 device=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-with open("intents.json","r") as json_data:
-    intents=json.load(json_data)
+# with open("intents.json","r") as json_data:
+#     intents=json.load(json_data)
+file =open(os.path.join(sys.path[0], "intents.json"), "r")
+intents = json.load(file)
 
 FILE="TrainData.pth"
 data=torch.load(FILE)
