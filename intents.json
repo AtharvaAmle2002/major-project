@@ -179,7 +179,7 @@
       },
       {
         "tag":"select the previous word",
-        "patterns":["select the previous word","select the previous word"],
+        "patterns":["select the previous word","previous word"],
         "responses":[
           "select the previous word"
         ]
@@ -245,13 +245,6 @@
         "patterns":["start numbered list","start numbered list in word", "numbered list"],
         "responses":[
           "start numbered list"
-        ]
-      },
-      {
-        "tag":"start bulleted list",
-        "patterns":["start bulleted list","start bulleted list in word", "bulleted list"],
-        "responses":[
-          "start bulleted list"
         ]
       },
       {

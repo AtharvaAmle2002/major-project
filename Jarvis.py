@@ -93,8 +93,6 @@ def Main():
                 # Lists and Bullets
                 elif "start numbered list" in reply:
                     InputExecution_ms_word(reply,sentence1)
-                elif "start bulleted list" in reply:
-                    InputExecution_ms_word(reply,sentence1)
 
 
             #font formatting
