@@ -93,11 +93,6 @@
       "responses": ["time"]
     },
     {
-      "tag": "word",
-      "patterns": ["open word", "load Word file"],
-      "responses": ["word"]
-    },
-    {
       "tag": "date",
       "patterns": [
         "date",
@@ -109,248 +104,717 @@
       "responses": ["date"]
     },
     {
-      "tag": "pain",
-      "patterns": ["pain", "hurt", "ache"],
+      "tag": "word",
+      "patterns": ["create new document", "start Word"],
       "responses": [
-        "I'm sorry to hear that you're in pain. Can you tell me where you're feeling discomfort?",
-        "I'm here to help you manage your pain. Please describe the pain you're experiencing."
+        "word"
       ]
     },
     {
-      "tag": "appointment",
-      "patterns": ["appointment", "schedule", "doctor"],
+
+      "tag": "start writing",
+      "patterns": ["start writing in word document", "start writing"],
       "responses": [
-        "Sure, I can help you schedule an appointment with your doctor. When would you like to visit?",
-        "Let's set up an appointment with your healthcare provider. When is a convenient time for you?"
+        "start writing"
       ]
     },
     {
-      "tag": "emotional_support",
-      "patterns": ["lonely", "sad", "depressed"],
+      "tag": "stop writing",
+      "patterns": ["stop writing in word document", "stop writing"],
       "responses": [
-        "I'm here to provide emotional support. Feel free to talk to me about how you're feeling.",
-        "You're not alone. I'm here to listen and offer support. Would you like to share what's on your mind?"
+        "stop writing"
       ]
     },
     {
-      "tag": "help",
-      "patterns": ["help", "assist", "support"],
+      "tag": "save document",
+      "patterns": ["save document", "save"],
       "responses": [
-        "Of course! I'm here to help. What do you need assistance with?",
-        "I'm ready to assist you. How can I help today?"
+        "save document"
       ]
     },
     {
-      "tag": "water",
-      "patterns": ["water", "thirsty"],
+      "tag": "close document",
+      "patterns": ["close document", "close"],
       "responses": [
-        "Sure, I'll get you a glass of water right away.",
-        "Stay hydrated! I'll bring you some water."
+        "close document"
       ]
     },
     {
-      "tag": "food",
-      "patterns": ["food", "hungry", "eat"],
+      "tag": "align left",
+      "patterns": ["align left", "left align the text"],
       "responses": [
-        "Are you feeling hungry? Let me help you order something to eat.",
-        "Time for a meal! What would you like to eat?"
+        "align left"
       ]
     },
     {
-      "tag": "medicine",
-      "patterns": ["medicine", "medication", "pill"],
-      "responses": [
-        "Do you need your medicine? Please provide me with the details.",
-        "Medication time! Let's make sure you take your medicine."
-      ]
-    },
-    {
-      "tag": "cab",
-      "patterns": ["book cab", "cab booking", "need a ride"],
-      "responses": [
-        "Sure thing! I can help you book a cab. Where would you like to be picked up from and dropped off?",
-        "Need a ride? Let's book a cab. Where are you headed?"
-      ]
-    },
-    {
-      "tag": "ms_word_operate",
-      "patterns": ["operate MS Word", "use Microsoft Word", "MS Word help"],
-      "responses": [
-        "Certainly! I can assist you with using Microsoft Word. What specific task do you need help with?",
-        "Working with MS Word? I'm here to guide you. Please let me know what you'd like to do."
-      ]
-    },
-    {
-      "tag": "navigation_open",
-      "patterns": ["open [application name]", "launch [application name]"],
-      "responses": [
-        "Opening the requested application.",
-        "Launching [application name]."
-      ]
-    },
-    {
-      "tag": "navigation_closeapps",
-      "patterns": ["close [application name]"],
-      "responses": ["Closing [application name]."]
-    },
-    {
-      "tag": "navigation_switch",
-      "patterns": ["switch to [application name]"],
-      "responses": ["Switching to [application name]."]
-    },
-    {
-      "tag": "navigation_minimize",
-      "patterns": ["minimize [application name]"],
-      "responses": ["Minimizing [application name]."]
-    },
-    {
-      "tag": "navigation_maximize",
-      "patterns": ["maximize [application name]"],
-      "responses": ["Maximizing [application name]."]
-    },
-    {
-      "tag": "navigation_url",
-      "patterns": ["go to [website url]"],
-      "responses": ["Navigating to [website url]."]
-    },
-    {
-      "tag": "navigation_scroll",
-      "patterns": ["scroll up"],
-      "responses": ["Scrolling up."]
-    },
-    {
-      "tag": "text_handling_create",
-      "patterns": ["create a new document"],
-      "responses": ["Creating a new document."]
-    },
-    {
-      "tag": "text_handling_openDoc",
-      "patterns": ["open [document name]"],
-      "responses": ["Opening [document name]."]
-    },
-    {
-      "tag": "text_handling_save",
-      "patterns": ["save"],
-      "responses": ["Saving the document."]
-    },
-    {
-      "tag": "file_management_open",
-      "patterns": ["open file explorer"],
-      "responses": ["Opening File Explorer."]
-    },
-    {
-      "tag": "file_management_downloads",
-      "patterns": ["show downloads"],
-      "responses": ["Displaying your downloads."]
-    },
-    {
-      "tag": "file_management_create",
-      "patterns": ["create a new folder"],
-      "responses": ["Creating a new folder."]
-    },
-    {
-      "tag": "system_commands_shutdown",
-      "patterns": ["shutdown"],
-      "responses": ["Shutting down the system."]
-    },
-    {
-      "tag": "system_commands_restart",
-      "patterns": ["restart"],
-      "responses": ["Restarting the system."]
-    },
-    {
-      "tag": "communication_email",
-      "patterns": ["send email to [contact name]"],
-      "responses": ["Composing an email to [contact name]."]
-    },
-    {
-      "tag": "communication_read",
-      "patterns": ["read emails"],
-      "responses": ["Reading your emails."]
-    },
-    {
-      "tag": "assistive_features_ScreenRead",
-      "patterns": ["enable screen reader"],
-      "responses": ["Enabling the screen reader."]
-    },
-    {
-      "tag": "assistive_features_video",
-      "patterns": ["turn on voice control"],
-      "responses": ["Activating voice control."]
-    },
-    {
-      "tag": "web_browsing_search",
-      "patterns": ["search for [query]"],
-      "responses": ["Performing a search for [query]."]
-    },
-    {
-      "tag": "web_browsing_openLink",
-      "patterns": ["open [website url]"],
-      "responses": ["Opening [website url]."]
-    },
-    {
-      "tag": "calendar_reminders_check",
-      "patterns": ["what's on my calendar"],
-      "responses": ["Checking your calendar for upcoming events."]
-    },
-    {
-      "tag": "calendar_reminders_today",
-      "patterns": ["what's on my calendar today"],
-      "responses": ["Checking your calendar for today's events."]
-    },
-    {
-      "tag": "calendar_reminders_newevent",
-      "patterns": ["create a new event"],
-      "responses": ["Creating a new event."]
-    },
-    {
-      "tag": "ms_word_create",
-      "patterns": ["create new document", "start a new file in Word"],
-      "responses": [
-        "Creating a new document in Microsoft Word is easy! Just go to 'File' > 'New' and choose a blank document template."
-      ]
-    },
-    {
-      "tag": "ms_word_open",
-      "patterns": ["open existing document", "load Word file"],
-      "responses": [
-        "To open an existing document in Microsoft Word, go to 'File' > 'Open' and select the file you want to work on."
-      ]
-    },
-    {
-      "tag": "ms_word_save",
-      "patterns": ["save document", "save Word file"],
-      "responses": [
-        "Saving your document is important. Simply go to 'File' > 'Save' or 'File' > 'Save As' to choose a location and name for your file."
-      ]
-    },
-    {
-      "tag": "ms_word_txt",
-      "patterns": ["format text", "change font style"],
-      "responses": [
-        "Formatting text in Word is a breeze. Highlight the text you want to format and use the formatting options in the 'Home' tab to change font style, size, color, and more."
-      ]
-    },
-    {
-      "tag": "ms_word_insert",
-      "patterns": ["insert image", "add picture to document"],
-      "responses": [
-        "To insert an image in your Word document, go to the 'Insert' tab and choose 'Picture'. Select the image file you want to add."
-      ]
-    },
-    {
-      "tag": "ms_word_createtable",
-      "patterns": ["create table", "make a table"],
-      "responses": [
-        "Creating a table in Word is useful for organizing data. Click on the 'Insert' tab, choose 'Table', and select the number of rows and columns you need."
-      ]
-    },
-    {
-      "tag": "ms_word_spell",
-      "patterns": ["spell check", "check spelling"],
-      "responses": [
-        "Proofreading is important. Use the 'Review' tab and click on 'Spelling & Grammar' to run a spell check on your document."
-      ]
-    }
-  ]
+        "tag": "align centre",
+        "patterns": ["align centre", "centre align the text"],
+        "responses": [
+          "align centre"
+        ]
+      },
+      {
+        "tag": "align right",
+        "patterns": ["align right", "right align the text"],
+        "responses": [
+          "align right"
+        ] 
+        
+      }
+      ,
+      {
+        "tag": "justify",
+        "patterns": ["justify", "justify the text"],
+        "responses": [
+          "justify"
+        ]
+      }
+      ,
+      {
+        "tag":"scroll down",
+        "patterns":["scroll down","scroll down"],
+        "responses":[
+          "scroll down"
+        ]
+      },
+      {
+        "tag":"select the previous word",
+        "patterns":["select the previous word","select the previous word"],
+        "responses":[
+          "select the previous word"
+        ]
+      },
+      {
+        "tag":"select the next paragraph",
+        "patterns":["select the next paragraph","next paragraph"],
+        "responses":[
+          "select the next paragraph"
+        ]
+      },
+      {
+        "tag":"select all text",
+        "patterns":["select all text","select entire text"],
+        "responses":[
+          "select all text"
+        ]
+      },
+      {
+        "tag":"deselect everything",
+        "patterns":["deselect everything","unselect everything"],
+        "responses":[
+          "deselect everything"
+        ]
+      },
+      {
+        "tag":"find",
+        "patterns":["find","find in word"],
+        "responses":[
+          "find"
+        ]
+      },
+      {
+        "tag":"replace",
+        "patterns":["replace","replace in word"],
+        "responses":[
+          "replace"
+        ]
+      },
+      {
+        "tag":"start spell check",
+        "patterns":["start spell check","start spell check in word"],
+        "responses":[
+          "start spell check"
+        ]
+      },
+      {
+        "tag":"ignore this word",
+        "patterns":["ignore this word","ignore this word in ms word"],
+        "responses":[
+          "ignore this word"
+        ]
+      },
+      {
+        "tag":"change misspelled to corrected",
+        "patterns":["change misspelled to corrected","change misspelled to corrected in word"],
+        "responses":[
+          "change misspelled to corrected"
+        ]
+      },
+      {
+        "tag":"start numbered list",
+        "patterns":["start numbered list","start numbered list in word", "numbered list"],
+        "responses":[
+          "start numbered list"
+        ]
+      },
+      {
+        "tag":"start bulleted list",
+        "patterns":["start bulleted list","start bulleted list in word", "bulleted list"],
+        "responses":[
+          "start bulleted list"
+        ]
+      },
+      {
+        "tag":"increase font size",
+        "patterns":["increase font size","increase font size in word"],
+        "responses":[
+          "increase font size"
+        ]
+      },
+      {
+        "tag":"bold text",
+        "patterns":["bold text","bold text in word", "bold the text"],
+        "responses":[
+          "bold text"
+        ]
+      },
+      {
+        "tag":"italicize this",
+        "patterns":["italicize this","italicize this text in word", "italicize the text"],
+        "responses":[
+          "italicize this"
+        ]
+      },
+      {
+        "tag":"underline the selected text",
+        "patterns":["underline the selected text", "underline the selected text in word"],
+        "responses":[
+          "underline the selected text"
+        ]
+      },
+      {
+        "tag":"change font to arial",
+        "patterns":["change font to arial", "change font to arial of text in word", "change font to arial of the text"],
+        "responses":[
+          "change font to arial"
+        ]
+      },
+      {
+        "tag":"change font to times new roman",
+        "patterns":["change font to times new roman", "change font to times new roman of the text in word"],
+        "responses":[
+          "change font to times new roman"
+        ]
+      },
+      {
+        "tag":"change font size to 12",
+        "patterns":["change font size to 12", "change font size to 12 of the text in word", "change font size to 12 of the text selected"],
+        "responses":[
+          "change font size to 12"
+        ]
+      },
+      {
+        "tag":"change font size to 16",
+        "patterns":["change font size to 16", "change font size to 16 of the text in word", "change font size to 16 of the text selected"],
+        "responses":[
+          "change font size to 16"
+        ]
+      },
+      
+
+      {
+        "tag":"cut this",
+        "patterns":["cut this","cut this text in word", "cut the text"],
+        "responses":[
+          "cut this"
+        ] 
+       }
+       ,
+       {
+         "tag":"copy the selection",
+         "patterns":["copy the selection","copy the selection in word", "copy the text"],
+         "responses":[
+           "copy the selection"
+         ]
+       }
+       ,
+       {
+         "tag":"paste",
+         "patterns":["paste","paste in word", "paste the text"],
+         "responses":[
+           "paste"
+         ]
+       }
+       ,
+       {
+         "tag":"undo the last action",
+         "patterns":["undo the last action","undo the last action in word"],
+         "responses":[
+           "undo the last action"
+         ]
+       },
+       {
+         "tag":"redo",
+         "patterns":["redo the last action","redo the last action in word"],
+         "responses":[
+           "redo"
+         ]
+       }
+       ,
+       {
+         "tag":"go to the beginning of the line",
+         "patterns":["go to the beginning of the line","go to the beginning of the line in word"],
+         "responses":[
+           "go to the beginning of the line"
+         ]
+       }
+       ,
+       {
+         "tag":"go to the end of the document",
+         "patterns":["go to the end of the document","go to the end of the document in word"],
+         "responses":[
+           "go to the end of the document"
+         ]
+        }, 
+      {
+        "tag":"insert a table",
+        "patterns":["insert a table", "insert a table in word"],
+        "responses":[
+          "insert a table"
+        ]
+      },
+      {
+        "tag":"insert a table with rows and columns",
+        "patterns":["insert a table with rows and columns", "insert a table with rows and columns in word"],
+        "responses":[
+          "insert a table with rows and columns"
+        ]
+      },
+      {
+        "tag": "format the table",
+        "patterns": ["format the table", "format table"],
+        "responses": [
+          "format the table"
+        ]
+      },
+      {
+        "tag": "format the image",
+        "patterns": ["format image", "image", "format the image"],
+        "responses": [
+          "format the image"
+        ]
+      },
+      {
+        "tag":"change background color to yellow",
+        "patterns":["change background color to yellow","change background color to yellow"],
+        "responses":[
+          "change background color to yellow"
+        ]
+      },
+      {
+        "tag":"change background color to yellow",
+        "patterns":["change background color to yellow","change background color to yellow"],
+        "responses":[
+          "change background color to yellow"
+        ]
+      },
+      {
+        "tag":"highlight selected text",
+        "patterns":["highlight selected text","highlight selected text"],
+        "responses":[
+          "highlight selected text"
+        ]
+      },
+      {
+        "tag":"add borders to selection",
+        "patterns":["add borders to selection","add borders to selection"],
+        "responses":[
+          "add borders to selection"
+        ]
+      },
+      {
+        "tag":"set table borders",
+        "patterns":["set table borders","set table borders"],
+        "responses":[
+          "set table borders"
+        ]
+      },
+      {
+        "tag":"apply table style",
+        "patterns":["apply table style","apply table style"],
+        "responses":[
+          "apply table style"
+        ]
+      },
+      {
+        "tag":"change cell background color",
+        "patterns":["change cell background color","change cell background color"],
+        "responses":[
+          "change cell background color"
+        ]
+      },
+      {
+        "tag":"change text color",
+        "patterns":["change text color","change text color"],
+        "responses":[
+          "change text color"
+        ]
+      },
+      {
+        "tag":"change text color",
+        "patterns":["change text color","change text color"],
+        "responses":[
+          "change text color"
+        ]
+      },
+      {
+        "tag":"adjust column width",
+        "patterns":["adjust column width","adjust column width"],
+        "responses":[
+          "adjust column width"
+        ]
+      },
+      {
+        "tag":"adjust row height",
+        "patterns":["adjust row height","adjust row height"],
+        "responses":[
+          "adjust row height"
+        ]
+      },
+      {
+        "tag":"merge cells",
+        "patterns":["merge cells","Adjust merge cells"],
+        "responses":[
+          "merge cells"
+        ]
+      },
+      {
+        "tag":"split cells",
+        "patterns":["split cells","split cells"],
+        "responses":[
+          "split cells"
+        ]
+      },
+      {
+        "tag":"insert an image from file",
+        "patterns":["insert an image from file","insert an image from file"],
+        "responses":[
+          "insert an image from file"
+        ]
+      },
+      {
+        "tag":"format the image",
+        "patterns":["format the image","format the image"],
+        "responses":[
+          "format the image"
+        ]
+      },
+      {
+        "tag":"set image border",
+        "patterns":["set image border","set the image border"],
+        "responses":[
+          "set image border"
+        ]
+      },
+      {
+        "tag":"change image size",
+        "patterns":["change image size","change the image size"],
+        "responses":[
+          "change image size"
+        ]
+      },
+      {
+        "tag":"crop the image",
+        "patterns":["crop the image","crop image"],
+        "responses":[
+          "crop the image"
+        ]
+      },
+      {
+        "tag":"apply image effects",
+        "patterns":["apply image effects","apply the image effects","image effects"],
+        "responses":[
+          "apply image effects"
+        ]
+      },
+      {
+        "tag":"rotate the image",
+        "patterns":["rotate the image","rotate image"],
+        "responses":[
+          "apply image effects"
+        ]
+      },
+      {
+        "tag":"change image brightness",
+        "patterns":["change image brightness","change the image brightness"],
+        "responses":[
+          "change image brightness"
+        ]
+      },
+      {
+        "tag":"adjust image contrast",
+        "patterns":["adjust image contrast","adjust the image contrast"],
+        "responses":[
+          "adjust image contrast"
+        ]
+      },
+      {
+        "tag":"compress the image",
+        "patterns":["compress the image","compress image"],
+        "responses":[
+          "compress the image"
+        ]
+      },
+      {
+        "tag":"reset image formatting",
+        "patterns":["reset image formatting","reset the image formatting"],
+        "responses":[
+          "reset image formatting"
+        ]
+      },
+      {
+        "tag":"create a bulleted list",
+        "patterns":["create a bulleted list","create bulleted list"],
+        "responses":[
+          "create a bulleted list"
+        ]
+      },
+      {
+        "tag":"add a comment here",
+        "patterns":["add a comment here","add comment"],
+        "responses":[
+          "add a comment here"
+        ]
+      }
+      ,
+      {
+        "tag":"insert a hyperlink",
+        "patterns":["insert a hyperlink","insert hyperlink"],
+        "responses":[
+          "insert a hyperlink"
+        ]
+      }
+      ,
+      {
+        "tag":"insert a rectangle shape",
+        "patterns":["insert a rectangle shape","insert rectangle shape"],
+        "responses":[
+          "insert a rectangle shape"
+        ]
+      }
+      ,
+      {
+        "tag":"insert an oval shape",
+        "patterns":["insert an oval shape","insert oval shape"],
+        "responses":[
+          "insert an oval shape"
+        ]
+      }
+      ,
+      {
+        "tag":"insert a triangle shape",
+        "patterns":["insert a triangle shape","insert triangle shape"],
+        "responses":[
+          "insert a triangle shape"
+        ]
+      }
+      ,
+      {
+        "tag":"insert a star shape",
+        "patterns":["insert a star shape","insert star shape"],
+        "responses":[
+          "insert a star shape"
+        ]
+      }
+      ,
+      {
+        "tag":"insert a line shape",
+        "patterns":["insert a line shape","insert line shape"],
+        "responses":[
+          "insert a line shape"
+        ]
+      }
+      ,
+      {
+        "tag":"insert a callout shape",
+        "patterns":["insert a callout shape","insert callout shape"],
+        "responses":[
+          "insert a callout shape"
+        ]
+      }
+      ,
+      {
+        "tag":"change background color to yellow",
+        "patterns":["change background color to yellow","change background color to yellow"],
+        "responses":[
+          "change background color to yellow"
+        ]
+      }
+      ,
+      {
+        "tag":"highlight selected text",
+        "patterns":["highlight selected text","highlight selected text"],
+        "responses":[
+          "highlight selected text"
+        ]
+      }
+      ,
+      {
+        "tag":"add borders to selection",
+        "patterns":["add borders to selection","add borders to selection"],
+        "responses":[
+          "add borders to selection"
+        ]
+      }
+      ,
+      {
+        "tag":"switch to print layout view",
+        "patterns":["switch to print layout view","switch to print layout view"],
+        "responses":[
+          "switch to print layout view"
+        ]
+      }
+      ,
+      {
+        "tag":"switch to read mode",
+        "patterns":["switch to read mode","switch to read mode"],
+        "responses":[
+          "switch to read mode"
+        ]
+      }
+      ,
+      {
+        "tag":"switch to web layout view",
+        "patterns":["switch to web layout view","switch to web layout view"],
+        "responses":[
+          "switch to web layout view"
+        ]
+      }
+      ,
+      {
+        "tag":"switch to outline view",
+        "patterns":["switch to outline view","switch to outline view"],
+        "responses":[
+          "switch to outline view"
+        ]
+      }
+      ,
+      {
+        "tag":"switch to draft view",
+        "patterns":["switch to draft view","switch to draft view"],
+        "responses":[
+          "switch to draft view"
+        ]
+      }
+      ,
+      {
+        "tag":"go to the design tab",
+        "patterns":["go to the design tab","go to the design tab"],
+        "responses":[
+          "go to the design tab"
+        ]
+      }
+      ,
+      {
+        "tag":"change page color",
+        "patterns":["change page color","change page color"],
+        "responses":[
+          "change page color"
+        ]
+      }
+      ,
+      {
+        "tag":"apply page borders",
+        "patterns":["apply page borders","apply page borders"],
+        "responses":[
+          "apply page borders"
+        ]
+      }
+      ,
+      {
+        "tag":"add watermark",
+        "patterns":["add watermark","add watermark"],
+        "responses":[
+          "add watermark"
+        ]
+      }
+      ,
+      {
+        "tag":"change theme",
+        "patterns":["change theme","change theme"],
+        "responses":[
+          "change theme"
+        ]
+      }
+      ,
+      {
+        "tag":"go to the insert tab",
+        "patterns":["go to the insert tab","go to the insert tab"],
+        "responses":[
+          "go to the insert tab"
+        ]
+      }
+      ,
+      {
+        "tag":"insert header",
+        "patterns":["insert header","insert header"],
+        "responses":[
+          "insert header"
+        ]
+      }
+      ,
+      {
+        "tag":"insert footer",
+        "patterns":["insert footer","insert footer"],
+        "responses":[
+          "insert footer"
+        ]
+      }    
+      ,
+      {
+        "tag":"format header",
+        "patterns":["format header","format header"],
+        "responses":[
+          "format header"
+        ]
+      }
+      ,
+      {
+        "tag":"format footer",
+        "patterns":["format footer","format footer"],
+        "responses":[
+          "format footer"
+        ]
+      }
+      ,
+      {
+        "tag":"close word",
+        "patterns":["close word","close word"],
+        "responses":[
+          "close word"
+        ]
+      }
+      ,
+      {
+        "tag":"save document",
+        "patterns":["save document","save document"],
+        "responses":[
+          "save document"
+        ]
+      }
+      ,
+      {
+        "tag":"close document",
+        "patterns":["close document","close document"],
+        "responses":[
+          "close document"
+        ]
+      }
+      ,
+      {
+        "tag":"open document",
+        "patterns":["open document","open document"],
+        "responses":[
+          "open document"
+        ]
+      }
+      ,
+      {
+        "tag":"new document",
+        "patterns":["new document","new document"],
+        "responses":[
+          "new document"
+        ]
+      }
+]
 }

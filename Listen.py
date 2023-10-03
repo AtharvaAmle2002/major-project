@@ -15,5 +15,5 @@ def Listen():
     except Exception as e:
         print("please say again...")
         return e
-    query=str(query)
-    return query.lower()
+    query=str(query).lower()
+    return query
