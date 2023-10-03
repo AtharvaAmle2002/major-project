@@ -1,11 +1,15 @@
 import datetime
 from Speak import speak
+import pyautogui
+import time
 def Time():
     time=datetime.datetime.now().strftime("%H pass %M minutes %S seconds")
     speak(f"the time is {time}")
 def Date():
     date=datetime.datetime.now().strftime("%d of %B %Y")
     speak(f"the date is {date}")
+
+
 
 def NonInputExecution(query):
     query=str(query)
@@ -14,3 +18,5 @@ def NonInputExecution(query):
 
     elif "date" in query:
         Date()
+
+

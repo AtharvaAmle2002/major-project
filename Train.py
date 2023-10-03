@@ -1,14 +1,18 @@
 import numpy as np
 import json
+import os
+import sys
 import torch 
 import json
 import torch.nn as nn
 from torch.utils.data import Dataset,DataLoader
 from NeuralNetwork import bag_of_words,tokenize,stem
 from Brain import NeuralNet
-with open('intents.json','r') as f:
-    intents=json.load(f)
-
+# with open('intents.json','r') as f:
+# with open('intents.json','r') as f:
+#     intents=json.load(f)
+file =open(os.path.join(sys.path[0], "intents.json"), "r")
+intents = json.load(file)
 all_words=[]
 tags=[]
 xy=[]

@@ -3,13 +3,13 @@
     {
       "tag": "greeting",
       "patterns": [
-        "Hi",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day",
-        "Whats up",
-        "Hey"
+        "hi",
+        "how are you",
+        "is anyone there?",
+        "hello",
+        "good day",
+        "whats up",
+        "hey"
       ],
       "responses": [
         "Hello!",
@@ -30,7 +30,7 @@
     },
     {
       "tag": "bye",
-      "patterns": ["bye", "Good day", "see you later", "sleep", "exit"],
+      "patterns": ["bye", "good day", "see you later", "sleep", "exit"],
       "responses": [
         "Bye.",
         "I am Going.",
@@ -46,7 +46,7 @@
     },
     {
       "tag": "health",
-      "patterns": ["How are you", "How you", "are you fine?", "are you good"],
+      "patterns": ["how are you", "how you", "are you fine?", "are you good"],
       "responses": [
         "I am fine.",
         "I am good.",
@@ -63,11 +63,14 @@
     {
       "tag": "Personal",
       "patterns": [
-        "What is your name",
+        "what is your name",
         "your name",
         "name",
         "who are you",
-        "who you are"
+        "who you are",
+        "tera naam kya h",
+        "naam btao",
+        "naam"
       ],
       "responses": [
         "My name is Jarvis.",
@@ -88,6 +91,11 @@
         "time batao"
       ],
       "responses": ["time"]
+    },
+    {
+      "tag": "word",
+      "patterns": ["open word", "load Word file"],
+      "responses": ["word"]
     },
     {
       "tag": "date",

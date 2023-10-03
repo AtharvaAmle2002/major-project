@@ -6,6 +6,6 @@ def speak(Text):
     engine.setProperty('rate', 170) #speed at which it talks
     print("  ")
     print(f"A.I : {Text}")
-    # engine.say(text=Text)
+    engine.say(text=Text)
     engine.runAndWait()
     print("  ")

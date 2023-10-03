@@ -322,7 +322,9 @@ def execute_voice_command(command):
     # Format Footer
     elif "format footer" in command:
         pyautogui.hotkey("alt", "p")  # Navigate to the Header & Footer Tools
-        pyautogui.hotkey("alt", "f", "o")  # Format footer                        
+        pyautogui.hotkey("alt", "f", "o")  # Format footer       
+    elif "close word" in command:
+        pyautogui.hotkey("alt", "f4")  # Close Word                 
 #for opening,closing and making of new document
     elif "save document" in command:
         pyautogui.hotkey("ctrl", "s")
